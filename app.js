@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const path = require('path');
 const Cart = require('./Models/cartSchema');
-const port = 5125;
+const port = 3000;
 
 const app = express();
 app.set('view engine', 'ejs');
