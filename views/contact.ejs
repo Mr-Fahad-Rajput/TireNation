@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact|Tire Nation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/contact.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <%- include('partials/navbar') %>
+  <div>
+    <section id="contact">
+      <div class="container my-5 py-5">
+        <div class="row mb-5">
+          <div class="col-12">
+            <h3 class="fs-5 text-center mb-0">Contact Us</h3>
+            <h1 class="display-6 text-center mb-4">
+              Send A Message
+            </h1>
+            <hr class="w-25 mx-auto" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/images/contact.jpg" alt="Contact" class="w-75" style = "border-radius: 15px 50px; margin-left: 50px;" />
+          </div>
+          <div class="col-md-6">
+            <form id="contact-form" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Smith"
+                  name="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                  Your Message
+                </label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-primary rounded-pill px-4">Send Message <i class="fa fa-paper-plane ms-2"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%- include('partials/footer') %>
+</body>
+</html>

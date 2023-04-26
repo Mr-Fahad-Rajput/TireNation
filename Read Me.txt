@@ -1,0 +1,23 @@
+step 1: Run Command: npm install -force, in root Directory(I-e: Server Folder), make sure you run command Prompt as administrator.
+step 2: Connecting to your Own Database: go to database folder in root Directory, open Connection.js, Add your MongoDB Cluster String in the Place Holder.
+step 3: Run Command: npm run dev, this command will start the server at port 5000
+step 4: Go to http://localhost:5000/
+
+Technologies Used: FrontEnd Stack- EJS(Embedded Java Script),
+                   Backend Stack- MongoDB,
+                   Integration Stack- Node + Express.
+
+                   For Dependencies Check Package.json
+
+
+Errors that you might face:
+
+Error: nodemon : File C:\Users\fahad\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at
+
+Solution: run vs as administrator then run command, Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+
+error: tiresite.2sdw1jz.mongodb.net <monitor> 192.221.2.2.
+solution: add ip to mongodb cluster , using network access panel, or for production add 0.0.0.0
+
+error: queryTxt ETIMEOUT tiresite.2sdw1jz.mongodb.net
+solution: add "&ssl=true" to the connection string and Change Network, it is actually dns and network proxy issue..

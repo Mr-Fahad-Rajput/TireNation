@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.tire-card-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    scroll-behavior: smooth;
+  }
+  
+  .tire-card {
+    flex: 0 0 20%;
+    min-width: 20%;
+    max-width: 20%;
+  }

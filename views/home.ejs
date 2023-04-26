@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tire Nation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <%- include("partials/navbar") %>
+    <!-- Main content -->
+    <main class="container mx-auto px-6 py-8">
+      <h1 class="text-5xl font-bold mb-8 text-center">
+        Welcome to Tire Nation
+      </h1>
+      <p class="text-lg mb-8 text-center">
+        Tire Nation offers a wide range of high-quality tires for various
+        vehicle types. Browse through our extensive collection of brands and
+        styles to find the perfect tire for your needs. Shop with confidence
+        knowing that we provide top-notch customer service and fast shipping.
+      </p>
+      <!-- search navigation -->
+      <div class="search-container flex justify-center mb-8">
+  <input type="text" class="search-input w-1/2 px-4 py-2 bg-white text-black rounded-l" placeholder="Search for tires" />
+  <button class="search-button bg-red-500 text-white px-4 py-2 rounded-r hover:bg-opacity-80">
+    Search
+  </button>
+</div>
+
+      <!-- Tire styles section -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4" style="text-align: center;">Our Tire Lineup</h2>
+        <div class="relative">
+          <div class="tire-card-container">
+            <!-- Tire Card 1 -->
+            <div class="tire-card">
+                <img
+                  src="https://delen.s3.ap-southeast-1.amazonaws.com/bridgestone_ALENZA_001_carbike360_com_2_0c4e778cca.jpg"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Bridgestone Alenza AL01 285/50 R20</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="100">$100.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 2 -->
+            <div class="tire-card">
+                <img
+                  src="https://tbc.scene7.com/is/image/TBCCorporation/bs215-bridgestone-ecopia-ep150-wheel-02"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Bridgestone Ecopia 150 185/65 R14</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="110">$110.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 3 -->
+            <div class="tire-card">
+                <img
+                  src="https://delen.s3.ap-southeast-1.amazonaws.com/continental_Conti_Comfort_Contact_CC_5_carbike360_com_1_8a6d0f8d5b.jpg"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Continental Comfort Contact CC5 185/65 R15</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="120">$120.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 4 -->
+            <div class="tire-card">
+                <img
+                  src="https://www.townfairtire.com/webimages/tires/CONTINENTAL/CONTI%20CROSS%20CONTACT%20LX%20SPORT_z.jpg"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Continental Cross Contact LX-2 285/60 R18</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="130">$130.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 5 -->
+            <div class="tire-card">
+                <img
+                  src="https://www.4tochki.ru/pictures/tyres/Dunlop_JP/Digi-Tyre_ECO_EC_201/big/0.png"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Dunlop ECO EC201 155/65 R13</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="140">$140.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 6 -->
+            <div class="tire-card">
+                <img
+                  src="https://cf.shopee.com.my/file/86237c5e24501c2bb9dc8ccce935cf31"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">Dunlop ECO EC215 145/70 R12</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="150">$150.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 7 -->
+            <div class="tire-card">
+                <img
+                  src="https://im9.cz/iR/importprodukt-orig/af3/af3324ad756d334ff41034e3c87c212f--mmf400x400.jpg"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">General Euro Kruze 185/65 R14</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="140">$140.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- Tire Card 8 -->
+            <div class="tire-card">
+                <img
+                  src="https://ukrshina.com.ua/media/images/sportiva-compact.400x400.jpeg"
+                  alt="Tire Style 1"
+                />
+                <h3 class="mt-2">General Euro Kompact 165/70 R12</h3>
+                <select class="block w-full mt-1 mb-2 bg-black">
+                  <option value="8">Base Size 8" OR Select size</option>
+                  <option value="10">10"</option>
+                  <option value="12">12"</option>
+                  <option value="13">13"</option>
+                  <option value="14">14"</option>
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="18">18"</option>
+                  <option value="19">19"</option>
+                  <option value="20">20"</option>
+                  <option value="22">22"</option>
+                  <option value="23">23"</option>
+                  <option value="24">24"</option>
+                  <option value="26">26"</option>
+                  <option value="28">28"</option>
+                </select>
+                <div class="flex justify-between items-center">
+                  <span class="text-xl price" data-base-price="170">$170.00</span>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+               <!-- Tire Card 9 -->
+            <div class="tire-card">
+              <img
+                src="https://i.ebayimg.com/images/g/O4kAAOSwD7JjlHaL/s-l400.jpg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Momo Toprun M30</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="100">$125.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 10 -->
+          <div class="tire-card">
+              <img
+                src="https://www.specialgomme.com/foto-pneumatici/415/momo-tire-m-4-four-season-29719.jpg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Momo Toprun M300</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="110">$115.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 11 -->
+          <div class="tire-card">
+              <img
+                src="https://www.bartl.com.uy/content/images/thumbs/0030592_cubierta-momo-2657017-forcerun-at-115t_400.jpeg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Momo Forcerun HT M8</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="120">$120.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 12 -->
+          <div class="tire-card">
+              <img
+                src="https://www.bartl.com.uy/content/images/thumbs/0018670_cubierta-momo-2256516-mendex-m7-112110t_400.jpeg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Momo Mendex M7</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="130">$135.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 13-->
+          <div class="tire-card">
+              <img
+                src="https://media.tyresonline.ae/media/catalog/product/cache/d076a6223bdc9b8e92b898db02389938/car-tyres/yokohama_delivery_star_ry818.jpg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Yokohama 818 185/R14</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="140">$140.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 14 -->
+          <div class="tire-card">
+              <img
+                src="https://ik.imagekit.io/ntvz9dezi1x/tyre/yokohama/c_drive_ac01.jpg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Yokohama A Drive 185/70 R13</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="150">$150.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 15 -->
+          <div class="tire-card">
+              <img
+                src="https://surgut.shiny-migom.ru/upload/iblock/49d/7y1qf38t4m1tcg2kamcffuynkxkh9aad.png"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Yokohama Advan db v552 245/45</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="140">$140.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <!-- Tire Card 16 -->
+          <div class="tire-card">
+              <img
+                src="https://ik.imagekit.io/ntvz9dezi1x/tyre/yokohama/bluearth_es32.jpg"
+                alt="Tire Style 1"
+              />
+              <h3 class="mt-2">Yokohama BluEarth- ES32</h3>
+              <select class="block w-full mt-1 mb-2 bg-black">
+                <option value="8">Base Size 8" OR Select size</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+                <option value="13">13"</option>
+                <option value="14">14"</option>
+                <option value="15">15"</option>
+                <option value="17">17"</option>
+                <option value="18">18"</option>
+                <option value="19">19"</option>
+                <option value="20">20"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="28">28"</option>
+              </select>
+              <div class="flex justify-between items-center">
+                <span class="text-xl price" data-base-price="170">$170.00</span>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-opacity-80 add-to-cart">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+                </div>
+                </div>
+                </section>
+                <%- include("partials/footer") %>
+                </main>
+                <!-- Tire Card Scripts -->
+<script>
+    function updatePrice(tireCard) {
+      const sizeSelect = tireCard.querySelector("select");
+      const priceSpan = tireCard.querySelector(".price");
+      const basePrice = parseFloat(priceSpan.dataset.basePrice);
+      const sizePrice = parseFloat(sizeSelect.value) || 0;
+      const totalPrice = basePrice + 10*sizePrice;
+  
+      priceSpan.innerText = "$" + totalPrice.toFixed(2);
+    }
+  
+// jquery function for search navigation
+function filterProducts() {
+  const searchTerm = $(".search-input").val().toLowerCase().trim();
+  const tireCards = $(".tire-card");
+
+  tireCards.each(function () {
+    const tireName = $(this).find("h3").text().toLowerCase();
+    if (tireName.includes(searchTerm)) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+}
+// eventlistener for search function
+$(document).ready(function () {
+  $(".search-button").click(function () {
+    filterProducts();
+  });
+
+  $(".search-input").on("keypress", function (e) {
+    if (e.which === 13) {
+      filterProducts();
+    }
+  });
+});
+
+
+function addToCart(tireCard) {
+  $.get('/is_logged_in', function (data) {
+    if (data.isLoggedIn) {
+      const tireStyle = $(tireCard).find('h3').text();
+      const size = $(tireCard).find('select').val();
+      const price = parseFloat($(tireCard).find('.price').text().replace('$', ''));
+      const imageUrl = $(tireCard).find('img').attr('src');
+
+      const item = { tireStyle, size, price, imageUrl };
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add',
+        data: JSON.stringify(item),
+        contentType: 'application/json',
+        success: function (response) {
+          alert('Tire added to cart');
+        },
+        error: function (response) {
+          if (response.status === 401) {
+            window.location.href = '/login';
+          } else {
+            alert('Error adding tire to cart');
+            console.log(response);
+          }
+        },
+      });
+    } else {
+      alert('Please login to add to cart');
+      window.location.href = '/login';
+    }
+  });
+}
+  
+    document.addEventListener("DOMContentLoaded", () => {
+      const tireCards = document.querySelectorAll(".tire-card");
+  
+      tireCards.forEach((tireCard) => {
+        const sizeSelect = tireCard.querySelector("select");
+        const addToCartButton = tireCard.querySelector(".add-to-cart");
+  
+        sizeSelect.addEventListener("change", () => updatePrice(tireCard));
+        addToCartButton.addEventListener("click", () => addToCart(tireCard));
+      });
+    });
+  </script>
+  <!-- ... -->
+</body>
+</html>

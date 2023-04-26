@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Tire Nation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/register.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <%- include('partials/navbar') %>
+  <div>
+    <div class="container shadow my-5">
+      <div class="row justify-content-end">
+        <div class="col-md-5 d-flex flex-column align-items-center text-white justify-content-center form order-2">
+          <h1 class="display-4 fw-bolder">Hello, Gentleman!</h1>
+          <p class="lead text-center">Enter Your Details to Register</p>
+          <h5 class="mb-4">OR</h5>
+          <a href="/login" class="btn btn-outline-light rounded-pill pb-2 w-50">
+            Login
+          </a>
+        </div>
+        <div class="col-md-6 p-5">
+          <form id="register-form" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">
+                Username
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">
+                Email address
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                name="email"
+              />
+              <div id="emailHelp" class="form-text">
+                Enter Email Here.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">
+                Password
+              </label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="password"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">
+                Agree Terms And Conditions
+              </label>
+            </div>
+            <button type="submit" class="btn btn-outline-primary w-100 mt-4 rounded-pill">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer') %>
+</body>
+</html>
