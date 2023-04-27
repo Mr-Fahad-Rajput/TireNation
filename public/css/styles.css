@@ -733,6 +733,17 @@ video {
   min-width: 20%;
   max-width: 20%;
 }
+@media screen and (max-width: 768px) {
+  .tire-card-container {
+    flex-direction: column;
+  }
+
+  .tire-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
 img{
   border-radius: 15px 50px;
 
