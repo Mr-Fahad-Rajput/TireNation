@@ -48,12 +48,19 @@
     </section>
     <div class="text-right mt-8">
         <!-- add address partial here if required -->
-      <button class="bg-red-500 text-white px-6 py-2 rounded hover:bg-opacity-80" onclick="alert('why dont tyres like to work? Because They are always TIRED. XD \nThanks For Shopping')>
+      <button class="bg-red-500 text-white px-6 py-2 rounded hover:bg-opacity-80" id="checkoutBtn">
         Proceed to Checkout
       </button>
     </div>
     <%- include("partials/footer") %>
   </main>
+  <script>
+    $(document).ready(function () {
+        $("#checkoutBtn").click(function () {
+            alert("why dont tyres like to work? Because They are always TIRED. XD\n Thanks For Shopping");
+        });
+    });
+</script>
   <script>
     $(document).ready(function () {
       $('.remove-from-cart').click(function () {
